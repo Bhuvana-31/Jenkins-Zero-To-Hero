@@ -11,5 +11,7 @@ WORKDIR /opt/app
 
 COPY ${artifact} app.jar
 
+RUN java -version
+
 # This should not be changed
 ENTRYPOINT ["java","-jar","app.jar"]
